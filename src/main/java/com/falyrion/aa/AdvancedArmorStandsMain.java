@@ -237,7 +237,7 @@ public class AdvancedArmorStandsMain extends JavaPlugin implements Listener {
             if (message == null) {
                 message = getLanguageConfig().getString("en_us." + messagePath);
 
-                // TODO: If message still null, languages.file might have been deleted for any reason. Recreate it.
+                
             }
 
             return message;
