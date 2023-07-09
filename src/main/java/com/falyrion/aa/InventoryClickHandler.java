@@ -539,7 +539,7 @@ public class InventoryClickHandler implements Listener {
                 AdvancedArmorStandsMain.getInstance().playSoundBass(player);
                 break;
 
-            case "§7§lZurück zum Hauptmenü":
+            case "§7§lZurück":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 1);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
@@ -573,7 +573,7 @@ public class InventoryClickHandler implements Listener {
                 AdvancedArmorStandsMain.getInstance().playSoundBass(player);
                 break;
 
-            case "§7§lZurück zum Hauptmenü":
+            case "§7§lZurück":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 1);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
@@ -596,7 +596,7 @@ public class InventoryClickHandler implements Listener {
 
         switch (itemName) {
 
-            case "§7§lZurück zum Hauptmenü":
+            case "§7§lZurück":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 1);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
@@ -1016,7 +1016,7 @@ public class InventoryClickHandler implements Listener {
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
             case "§7§lHilfe§8?" -> AdvancedArmorStandsMain.getInstance().playSoundBass(player);
-            case "§7§lZurück zum Hauptmenü" -> {
+            case "§7§lZurück" -> {
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 1);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);

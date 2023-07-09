@@ -408,7 +408,7 @@ public class GUI {
         ItemStack backItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta backMeta = backItem.getItemMeta();
         backMeta.setCustomModelData(54);
-        backMeta.setDisplayName("§7§lZurück zum Hauptmenü");
+        backMeta.setDisplayName("§7§lZurück");
         ArrayList<String> backLore = new ArrayList<String>();
         backLore.add("  ");
         String menuBasicBackString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.back", player.getLocale());
@@ -601,7 +601,7 @@ public class GUI {
         ItemStack backItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta backMeta = backItem.getItemMeta();
         backMeta.setCustomModelData(54);
-        backMeta.setDisplayName("§7§lZurück zum Hauptmenü");
+        backMeta.setDisplayName("§7§lZurück");
         ArrayList<String> backLore = new ArrayList<String>();
         backLore.add("  ");
         String menuBodyStringBack = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.back", player.getLocale());
@@ -873,7 +873,7 @@ public class GUI {
         ItemStack backItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta backMeta = backItem.getItemMeta();
         backMeta.setCustomModelData(54);
-        backMeta.setDisplayName("§7§lZurück zum Hauptmenü");
+        backMeta.setDisplayName("§7§lZurück");
         ArrayList<String> backLore = new ArrayList<String>();
         backLore.add(" ");
         String menuMoveBack = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.back", player.getLocale());
@@ -1254,7 +1254,7 @@ public class GUI {
         ItemStack backItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta backItemItemMeta = backItem.getItemMeta();
         backItemItemMeta.setCustomModelData(54);
-        backItemItemMeta.setDisplayName("§7§lZurück zum Hauptmenü");
+        backItemItemMeta.setDisplayName("§7§lZurück");
         ArrayList<String> backItemLore = new ArrayList<String>();
         backItemLore.add("  ");
         String menuPresetStringBack = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.back", player.getLocale());
