@@ -26,7 +26,7 @@ public class GUI {
     private Inventory createMainMenu(Player player) {
         // Create Inventory
 
-        Inventory GUIMain = Bukkit.createInventory(null, 9, "Rüstungsständer");
+        Inventory GUIMain = Bukkit.createInventory(null, 9, "[lang]advancedarmorstands.gui.armor_stand[/lang]");
 
 
         // Create ItemStacks
@@ -35,7 +35,7 @@ public class GUI {
 
         ItemStack basicSettingsItem = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta basicSettingsMeta = basicSettingsItem.getItemMeta();
-        basicSettingsMeta.setDisplayName("§7§lGrundeinstellungen");
+        basicSettingsMeta.setDisplayName("[lang]advancedarmorstand.gui.basic_settings[/lang]");
         ArrayList<String> basicSettingsLore = new ArrayList<String>();
         basicSettingsLore.add(" ");
         String menuMainBasicSettings = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.main.basic_settings", player.getLocale());
@@ -51,7 +51,7 @@ public class GUI {
 
         ItemStack bodyPartSettingsItem = new ItemStack(Material.STONE_SLAB, 1);
         ItemMeta bodyPartSettingsMeta = bodyPartSettingsItem.getItemMeta();
-        bodyPartSettingsMeta.setDisplayName("§7§lKörpereinstellungen");
+        bodyPartSettingsMeta.setDisplayName("[lang]advancedarmorstand.gui.body_settings[/lang]");
         ArrayList<String> bodyPartSettingsLore = new ArrayList<String>();
         bodyPartSettingsLore.add("  ");
         String menuMainBodySettings = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.main.body_settings", player.getLocale());
@@ -67,7 +67,7 @@ public class GUI {
 
         ItemStack movementItem = new ItemStack(Material.GLOWSTONE_DUST, 1);
         ItemMeta movementMeta = movementItem.getItemMeta();
-        movementMeta.setDisplayName("§7§lBewegung und Drehung");
+        movementMeta.setDisplayName("[lang]advancedarmorstand.gui.movement_and_rotation[/lang]");
         ArrayList<String> movementLore = new ArrayList<String>();
         movementLore.add("  ");
         String menuMainMovement = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.main.movement", player.getLocale());
@@ -83,7 +83,7 @@ public class GUI {
 
         ItemStack presetPoses = new ItemStack(Material.IRON_SWORD, 1);
         ItemMeta presetPosesMeta = presetPoses.getItemMeta();
-        presetPosesMeta.setDisplayName("§7§lVordefinierte Posen");
+        presetPosesMeta.setDisplayName("[lang]advancedarmorstand.gui.predefined_poses[/lang]");
         ArrayList<String> presetPosesLore = new ArrayList<String>();
         presetPosesLore.add("  ");
         String menuMainPreset = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.main.preset", player.getLocale());
@@ -100,7 +100,7 @@ public class GUI {
         ItemStack headsItem = new ItemStack(Material.PUMPKIN, 1);
         headsItem.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1);
         ItemMeta headsMeta = headsItem.getItemMeta();
-        headsMeta.setDisplayName("§7§lKöpfe");
+        headsMeta.setDisplayName("[lang]advancedarmorstand.gui.heads[/lang]");
         ArrayList<String> headsLore = new ArrayList<String>();
         headsLore.add("  ");
         String menuMainHeads = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.main.heads", player.getLocale());
@@ -121,7 +121,7 @@ public class GUI {
         ItemStack closeMenuItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta closeMenuMeta = closeMenuItem.getItemMeta();
         closeMenuMeta.setCustomModelData(54);
-        closeMenuMeta.setDisplayName("§7§lSchließen");
+        closeMenuMeta.setDisplayName("[lang]advancedarmorstand.gui.close[/lang]");
         ArrayList<String> closeMenuLore = new ArrayList<String>();
         closeMenuLore.add("  ");
         String menuMainClose = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.main.close", player.getLocale());
@@ -169,13 +169,13 @@ public class GUI {
 
         // Create Inventory
 
-        Inventory GUIBasicSettings = Bukkit.createInventory(null, 27, "RS Grundeinstellungen");
+        Inventory GUIBasicSettings = Bukkit.createInventory(null, 27, "[lang]advancedarmorstand.gui.basic_settings[/lang]");
 
         // Create ItemStacks
 
         ItemStack toggleArmsItem = new ItemStack(Material.IRON_SWORD, 1);
         ItemMeta toggleArmsMeta = toggleArmsItem.getItemMeta();
-        toggleArmsMeta.setDisplayName("§7§lArme");
+        toggleArmsMeta.setDisplayName("[lang]advancedarmorstand.gui.arms[/lang]");
         ArrayList<String> toggleArmLore = new ArrayList<String>();
         toggleArmLore.add(" ");
         String menuBasicArmsString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.arms", player.getLocale());
@@ -189,7 +189,7 @@ public class GUI {
 
         ItemStack baseplateInvisibleItem = new ItemStack(Material.STONE_SLAB, 1);
         ItemMeta baseplateInvisibleMeta = baseplateInvisibleItem.getItemMeta();
-        baseplateInvisibleMeta.setDisplayName("§7§lSteinplatte unsichtbar");
+        baseplateInvisibleMeta.setDisplayName("[lang]advancedarmorstand.gui.stone_slab[/lang]");
         ArrayList<String> baseplateInvisibleLore = new ArrayList<String>();
         baseplateInvisibleLore.add("  ");
         String menuBasicBaseInvString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.base_inv", player.getLocale());
@@ -203,7 +203,7 @@ public class GUI {
 
         ItemStack baseplateVisibleItem = new ItemStack(Material.STONE_SLAB, 1);
         ItemMeta baseplateVisibleMeta = baseplateVisibleItem.getItemMeta();
-        baseplateVisibleMeta.setDisplayName("§7§lSteinplatte sichtbar");
+        baseplateVisibleMeta.setDisplayName("[lang]advancedarmorstand.gui.stone_slab_off[/lang]");
         ArrayList<String> baseplateVisibleLore = new ArrayList<String>();
         baseplateVisibleLore.add("  ");
         String menuBasicBaseVisString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.base_vis", player.getLocale());
@@ -217,7 +217,7 @@ public class GUI {
 
         ItemStack gravityOffItem = new ItemStack(Material.FEATHER, 1);
         ItemMeta gravityOffMeta = gravityOffItem.getItemMeta();
-        gravityOffMeta.setDisplayName("§7§lSchwerkraft aus");
+        gravityOffMeta.setDisplayName("[lang]advancedarmorstand.gui.gravity.off[/lang]");
         ArrayList<String> gravityOffLore = new ArrayList<String>();
         gravityOffLore.add("  ");
         String menuBasicGravityOffString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.gravity_off", player.getLocale());
@@ -231,7 +231,7 @@ public class GUI {
 
         ItemStack gravityOnItem = new ItemStack(Material.FEATHER, 1);
         ItemMeta gravityOnMeta = gravityOnItem.getItemMeta();
-        gravityOnMeta.setDisplayName("§7§lSchwerkraft an");
+        gravityOnMeta.setDisplayName("[lang]advancedarmorstand.gui.gravity.on[/lang]");
         ArrayList<String> gravityOnLore = new ArrayList<String>();
         gravityOnLore.add("  ");
         String menuBasicGravityOnString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.gravity_on", player.getLocale());
@@ -245,7 +245,7 @@ public class GUI {
 
         ItemStack asInvisibleItem = new ItemStack(Material.GLASS, 1);
         ItemMeta asInvisibleMeta = asInvisibleItem.getItemMeta();
-        asInvisibleMeta.setDisplayName("§7§lUnsichtbar");
+        asInvisibleMeta.setDisplayName("[lang]advancedarmorstand.gui.invisible[/lang]");
         ArrayList<String> asInvisibleLore = new ArrayList<String>();
         asInvisibleLore.add("  ");
         String menuBasicInvString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.invisible", player.getLocale());
@@ -259,7 +259,7 @@ public class GUI {
 
         ItemStack asVisibleItem = new ItemStack(Material.BLACK_STAINED_GLASS, 1);
         ItemMeta asVisibleMeta = asVisibleItem.getItemMeta();
-        asVisibleMeta.setDisplayName("§7§lSichtbar");
+        asVisibleMeta.setDisplayName("[lang]advancedarmorstand.gui.visible[/lang]");
         ArrayList<String> asVisibleLore = new ArrayList<String>();
         asVisibleLore.add("  ");
         String menuBasicVisString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.visible", player.getLocale());
@@ -273,7 +273,7 @@ public class GUI {
 
         ItemStack makeSmallItem = new ItemStack(Material.OAK_SLAB, 1);
         ItemMeta makeSmallMeta = makeSmallItem.getItemMeta();
-        makeSmallMeta.setDisplayName("§7§lKlein");
+        makeSmallMeta.setDisplayName("[lang]advancedarmorstand.gui.small[/lang]");
         ArrayList<String> makeSmallLore = new ArrayList<String>();
         makeSmallLore.add("  ");
         String menuBasicSmallString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.size_small", player.getLocale());
@@ -287,7 +287,7 @@ public class GUI {
 
         ItemStack makeNormalSizeItem = new ItemStack(Material.OAK_PLANKS, 1);
         ItemMeta makeNormalSizeMeta = makeNormalSizeItem.getItemMeta();
-        makeNormalSizeMeta.setDisplayName("§7§lNormale Größe");
+        makeNormalSizeMeta.setDisplayName("[lang]advancedarmorstand.gui.normal_size[/lang]");
         ArrayList<String> makeNormalSizeLore = new ArrayList<String>();
         makeNormalSizeLore.add("  ");
         String menuBasicNormalString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.size_normal", player.getLocale());
@@ -301,7 +301,7 @@ public class GUI {
 
         ItemStack customNameItem = new ItemStack(Material.NAME_TAG, 1);
         ItemMeta customNameMeta = customNameItem.getItemMeta();
-        customNameMeta.setDisplayName("§7§lIndividueller Name");
+        customNameMeta.setDisplayName("[lang]advancedarmorstand.gui.individual_name[/lang]");
         ArrayList<String> customNameLore = new ArrayList<String>();
         customNameLore.add("  ");
         String menuBasicNameString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.name", player.getLocale());
@@ -317,7 +317,7 @@ public class GUI {
 
         ItemStack nameHelpItem = new ItemStack(Material.NAME_TAG, 1);
         ItemMeta nameHelpMeta = nameHelpItem.getItemMeta();
-        nameHelpMeta.setDisplayName("§7§lNamenshilfe");
+        nameHelpMeta.setDisplayName("[lang]advancedarmorstand.gui.name_help[/lang]");
         ArrayList<String> nameHelpLore = new ArrayList<String>();
         nameHelpLore.add(" ");
         String menuBasicNameHelpString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.name_help", player.getLocale());
@@ -331,7 +331,7 @@ public class GUI {
 
         ItemStack hideNameItem = new ItemStack(Material.NAME_TAG, 1);
         ItemMeta hideNameMeta = hideNameItem.getItemMeta();
-        hideNameMeta.setDisplayName("§7§lNamen ausblenden");
+        hideNameMeta.setDisplayName("[lang]advancedarmorstand.gui.hide_names[/lang]");
         ArrayList<String> hideNameLore = new ArrayList<String>();
         hideNameLore.add("  ");
         String menuBasicNameHideString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.name_hide", player.getLocale());
@@ -345,7 +345,7 @@ public class GUI {
 
         ItemStack glowItem = new ItemStack(Material.GLOWSTONE, 1);
         ItemMeta glowMeta = glowItem.getItemMeta();
-        glowMeta.setDisplayName("§7§lLeuchtend an");
+        glowMeta.setDisplayName("[lang]advancedarmorstand.gui.light_on[/lang]");
         ArrayList<String> glowLore = new ArrayList<String>();
         glowLore.add("  ");
         String menuBasicGlowAddString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.glow_add", player.getLocale());
@@ -359,7 +359,7 @@ public class GUI {
 
         ItemStack glowRemoveItem = new ItemStack(Material.GLOWSTONE, 1);
         ItemMeta glowRemoveMeta = glowRemoveItem.getItemMeta();
-        glowRemoveMeta.setDisplayName("§7§lLeuchtend aus");
+        glowRemoveMeta.setDisplayName("[lang]advancedarmorstand.gui.light_off[/lang]");
         ArrayList<String> glowRemoveLore = new ArrayList<String>();
         glowRemoveLore.add("  ");
         String menuBasicGlowRemoveString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.glow_remove", player.getLocale());
@@ -373,7 +373,7 @@ public class GUI {
 
         ItemStack invulnerableItem = new ItemStack(Material.OBSIDIAN, 1);
         ItemMeta invulnerableMeta = invulnerableItem.getItemMeta();
-        invulnerableMeta.setDisplayName("§7§lUnzerstörbar");
+        invulnerableMeta.setDisplayName("[lang]advancedarmorstand.gui.indestructible[/lang]");
         ArrayList<String> invulnerableLore = new ArrayList<String>();
         invulnerableLore.add("  ");
         String menuBasicInvulnerableString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.basic.invulnerable", player.getLocale());
@@ -391,7 +391,7 @@ public class GUI {
         ItemStack helpItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta helpMeta = helpItem.getItemMeta();
         helpMeta.setCustomModelData(111);
-        helpMeta.setDisplayName("§7§lHilfe§8?");
+        helpMeta.setDisplayName("[lang]advancedarmorstand.gui.help[/lang]");
         ArrayList<String> helpLore = new ArrayList<String>();
         helpLore.add("  ");
         String menuBasicHelpString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.help", player.getLocale());
@@ -408,7 +408,7 @@ public class GUI {
         ItemStack backItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta backMeta = backItem.getItemMeta();
         backMeta.setCustomModelData(54);
-        backMeta.setDisplayName("§7§lZurück");
+        backMeta.setDisplayName("[lang]advancedarmorstand.gui.back[/lang]");
         ArrayList<String> backLore = new ArrayList<String>();
         backLore.add("  ");
         String menuBasicBackString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.back", player.getLocale());
@@ -482,14 +482,14 @@ public class GUI {
 
         // Create Inventory
 
-        Inventory GUIBodyParts = Bukkit.createInventory(null, 27, "RS Körpereinstellungen");
+        Inventory GUIBodyParts = Bukkit.createInventory(null, 27, "[lang]advancedarmorstand.gui.body_settings[/lang]");
         
         
         // Create ItemStacks
 
         ItemStack headPose = new ItemStack(Material.GOLDEN_HELMET, 1);
         ItemMeta headPoseItemMeta = headPose.getItemMeta();
-        headPoseItemMeta.setDisplayName("§7§lKopf Position");
+        headPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.head_position[/lang]");
         ArrayList<String> headPoseLore = new ArrayList<String>();
         headPoseLore.add("  ");
         String menuBodyStringHP = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.body.head", player.getLocale());
@@ -506,7 +506,7 @@ public class GUI {
 
         ItemStack bodyPose = new ItemStack(Material.GOLDEN_CHESTPLATE, 1);
         ItemMeta bodyPoseMeta = bodyPose.getItemMeta();
-        bodyPoseMeta.setDisplayName("§7§lKörper Position");
+        bodyPoseMeta.setDisplayName("[lang]advancedarmorstand.gui.body_position[/lang]");
         ArrayList<String> bodyPoseLore = new ArrayList<String>();
         bodyPoseLore.add("  ");
         String menuBodyStringBP = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.body.body", player.getLocale());
@@ -522,7 +522,7 @@ public class GUI {
 
         ItemStack rightArm = new ItemStack(Material.GOLDEN_CHESTPLATE, 1);
         ItemMeta rightArmMeta = rightArm.getItemMeta();
-        rightArmMeta.setDisplayName("§7§lRechte Arm Position");
+        rightArmMeta.setDisplayName("[lang]advancedarmorstand.gui.right_arm_position[/lang]");
         ArrayList<String> rightArmLore = new ArrayList<String>();
         rightArmLore.add("  ");
         String menuBodyStringRAP = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.body.rap", player.getLocale());
@@ -538,7 +538,7 @@ public class GUI {
 
         ItemStack leftArm = new ItemStack(Material.GOLDEN_CHESTPLATE, 1);
         ItemMeta leftArmMeta = leftArm.getItemMeta();
-        leftArmMeta.setDisplayName("§7§lLinke Arm Position");
+        leftArmMeta.setDisplayName("[lang]advancedarmorstand.gui.left_arm_position[/lang]");
         ArrayList<String> leftArmLore = new ArrayList<String>();
         leftArmLore.add("  ");
         String menuBodyStringLAP = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.body.lap", player.getLocale());
@@ -554,7 +554,7 @@ public class GUI {
 
         ItemStack rightLeg = new ItemStack(Material.GOLDEN_LEGGINGS, 1);
         ItemMeta rightLegMeta = rightLeg.getItemMeta();
-        rightLegMeta.setDisplayName("§7§lRechte Bein Position");
+        rightLegMeta.setDisplayName("[lang]advancedarmorstand.gui.right_leg_position[/lang]");
         ArrayList<String> rightLegLore = new ArrayList<String>();
         rightLegLore.add("  ");
         String menuBodyStringRLP = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.body.rlp", player.getLocale());
@@ -570,7 +570,7 @@ public class GUI {
 
         ItemStack leftLeg = new ItemStack(Material.GOLDEN_LEGGINGS, 1);
         ItemMeta leftLegMeta = leftLeg.getItemMeta();
-        leftLegMeta.setDisplayName("§7§lLinke Bein Position");
+        leftLegMeta.setDisplayName("[lang]advancedarmorstand.gui.left_leg_position[/lang]");
         ArrayList<String> leftLegLore = new ArrayList<String>();
         leftLegLore.add("  ");
         String menuBodyStringLLP = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.body.llp", player.getLocale());
@@ -587,7 +587,7 @@ public class GUI {
         ItemStack helpItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta helpMeta = helpItem.getItemMeta();
         helpMeta.setCustomModelData(111);
-        helpMeta.setDisplayName("§7§lHilfe§8?");
+        helpMeta.setDisplayName("[lang]advancedarmorstand.gui.help[/lang]");
         ArrayList<String> helpLore = new ArrayList<String>();
         helpLore.add("  ");
         String menuBodyHelpString = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.help", player.getLocale());
@@ -601,7 +601,7 @@ public class GUI {
         ItemStack backItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta backMeta = backItem.getItemMeta();
         backMeta.setCustomModelData(54);
-        backMeta.setDisplayName("§7§lZurück");
+        backMeta.setDisplayName("[lang]advancedarmorstand.gui.back[/lang]");
         ArrayList<String> backLore = new ArrayList<String>();
         backLore.add("  ");
         String menuBodyStringBack = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.back", player.getLocale());
@@ -664,9 +664,9 @@ public class GUI {
         // Create Inventory
         String inventoryName = "";
 
-        String blockSmallName = "§7§lDistanz§8: §a0§8.§a1 Blöcke";
-        String blockMediumName = "§7§lDistanz§8: §a0§8.§a5 Blöcke";
-        String blockLargeName = "§7§lDistanz§8: §a1 Block";
+        String blockSmallName = "[lang]advancedarmorstand.gui.blockSmallName[/lang]";
+        String blockMediumName = "[lang]advancedarmorstand.gui.blockMediumName[/lang]";
+        String blockLargeName = "[lang]advancedarmorstand.gui.blockLargeName[/lang]";
 
         Material blockSmallMaterial = Material.ORANGE_TERRACOTTA;
         Material blockMediumMaterial = Material.ORANGE_TERRACOTTA;
@@ -674,21 +674,21 @@ public class GUI {
 
         switch (Size) {
             case 1:
-                inventoryName = "Rüstungsständer bewegen§8: §a0§8.§a1";
+                inventoryName = "[lang]advancedarmorstand.gui.move_armor_stand[/lang] §a0§8.§a1";
                 blockSmallMaterial = Material.BLUE_TERRACOTTA;
-                blockSmallName = "§7§lDistanz§8: §a0§8.§a1 Blöcke §8(§7Activ§8)";
+                blockSmallName = "[lang]advancedarmorstand.gui.blockSmallName[/lang] §8(§7Activ§8)";
                 break;
 
             case 2:
-                inventoryName = "Rüstungsständer bewegen§8: §a0§8.§a5";
+                inventoryName = "[lang]advancedarmorstand.gui.move_armor_stand[/lang] §a0§8.§a5";
                 blockMediumMaterial = Material.BLUE_TERRACOTTA;
-                blockMediumName = "§7§lDistanz§8: §a0§8.§a5 Blöcke §8(§7Activ§8)";
+                blockMediumName = "[lang]advancedarmorstand.gui.blockMediumName[/lang] §8(§7Activ§8)";
                 break;
 
             case 3:
-                inventoryName = "Rüstungsständer bewegen§8: §a1";
+                inventoryName = "[lang]advancedarmorstand.gui.move_armor_stand[/lang] §a1";
                 blockLargeMaterial = Material.BLUE_TERRACOTTA;
-                blockLargeName = "§7§lDistanz§8: §a1 Block §8(§7Activ§8)";
+                blockLargeName = "[lang]advancedarmorstand.gui.blockLargeName[/lang] §8(§7Activ§8)";
                 break;
         }
 
@@ -743,7 +743,7 @@ public class GUI {
         ItemStack moveForward = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta moveForwardItemMeta = moveForward.getItemMeta();
         moveForwardItemMeta.setCustomModelData(12);
-        moveForwardItemMeta.setDisplayName("§7§lVorwärts");
+        moveForwardItemMeta.setDisplayName("[lang]advancedarmorstand.gui.forward[/lang]");
         ArrayList<String> moveForwardLore = new ArrayList<String>();
         moveForwardLore.add("  ");
         String menuMoveStringForward = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.move.forward", player.getLocale());
@@ -758,7 +758,7 @@ public class GUI {
         ItemStack moveBackwards = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta moveBackwardsItemMeta = moveBackwards.getItemMeta();
         moveBackwardsItemMeta.setCustomModelData(32);
-        moveBackwardsItemMeta.setDisplayName("§7§lRückwärts");
+        moveBackwardsItemMeta.setDisplayName("[lang]advancedarmorstand.gui.backward[/lang]");
         ArrayList<String> moveBackwardsLore = new ArrayList<String>();
         moveBackwardsLore.add("  ");
         String menuMoveStringBackward = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.move.backward", player.getLocale());
@@ -773,7 +773,7 @@ public class GUI {
         ItemStack moveRight = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta moveRightItemMeta = moveRight.getItemMeta();
         moveRightItemMeta.setCustomModelData(22);
-        moveRightItemMeta.setDisplayName("§7§lRechts");
+        moveRightItemMeta.setDisplayName("[lang]advancedarmorstand.gui.right[/lang]");
         ArrayList<String> moveRightLore = new ArrayList<String>();
         moveRightLore.add("  ");
         String menuMoveStringRight = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.move.right", player.getLocale());
@@ -788,7 +788,7 @@ public class GUI {
         ItemStack moveLeft = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta moveLeftItemMeta = moveLeft.getItemMeta();
         moveLeftItemMeta.setCustomModelData(42);
-        moveLeftItemMeta.setDisplayName("§7§lLinks");
+        moveLeftItemMeta.setDisplayName("[lang]advancedarmorstand.gui.left[/lang]");
         ArrayList<String> moveLeftLore = new ArrayList<String>();
         moveLeftLore.add("  ");
         String menuMoveStringLeft = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.move.left", player.getLocale());
@@ -802,7 +802,7 @@ public class GUI {
         
         ItemStack moveUp = new ItemStack(Material.FEATHER, 1);
         ItemMeta moveUpItemMeta = moveUp.getItemMeta();
-        moveUpItemMeta.setDisplayName("§7§lHoch");
+        moveUpItemMeta.setDisplayName("[lang]advancedarmorstand.gui.up[/lang]");
         ArrayList<String> moveUpLore = new ArrayList<String>();
         moveUpLore.add("  ");
         String menuMoveStringUp = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.move.up", player.getLocale());
@@ -816,7 +816,7 @@ public class GUI {
 
         ItemStack moveDown = new ItemStack(Material.ANVIL, 1);
         ItemMeta moveDownItemMeta = moveDown.getItemMeta();
-        moveDownItemMeta.setDisplayName("§7§lRunter");
+        moveDownItemMeta.setDisplayName("[lang]advancedarmorstand.gui.down[/lang]");
         ArrayList<String> moveDownLore = new ArrayList<String>();
         moveDownLore.add("  ");
         String menuMoveStringDown = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.move.down", player.getLocale());
@@ -830,7 +830,7 @@ public class GUI {
 
         ItemStack rotateLeft = new ItemStack(Material.GLOWSTONE_DUST, 1);
         ItemMeta rotateLeftItemMeta = rotateLeft.getItemMeta();
-        rotateLeftItemMeta.setDisplayName("§7§lNach links drehen");
+        rotateLeftItemMeta.setDisplayName("[lang]advancedarmorstand.gui.turn_left[/lang]");
         ArrayList<String> rotateLeftLore = new ArrayList<String>();
         rotateLeftLore.add("  ");
         String menuMoveStringRotateLeft = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.move.rotate_left", player.getLocale());
@@ -844,7 +844,7 @@ public class GUI {
 
         ItemStack rotateRight = new ItemStack(Material.GLOWSTONE_DUST, 1);
         ItemMeta rotateRightItemMeta = rotateRight.getItemMeta();
-        rotateRightItemMeta.setDisplayName("§7§lNach rechts drehen");
+        rotateRightItemMeta.setDisplayName("[lang]advancedarmorstand.gui.turn_right[/lang]");
         ArrayList<String> rotateRightLore = new ArrayList<String>();
         rotateRightLore.add("  ");
         String menuMoveStringRotateRight = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.move.rotate_right", player.getLocale());
@@ -859,7 +859,7 @@ public class GUI {
         ItemStack helpItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta helpMeta = helpItem.getItemMeta();
         helpMeta.setCustomModelData(111);
-        helpMeta.setDisplayName("§7§lHilfe§8?");
+        helpMeta.setDisplayName("[lang]advancedarmorstand.gui.help[/lang]");
         ArrayList<String> helpLore = new ArrayList<String>();
         helpLore.add("  ");
         String menuMoveStringHelp = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.help", player.getLocale());
@@ -873,7 +873,7 @@ public class GUI {
         ItemStack backItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta backMeta = backItem.getItemMeta();
         backMeta.setCustomModelData(54);
-        backMeta.setDisplayName("§7§lZurück");
+        backMeta.setDisplayName("[lang]advancedarmorstand.gui.back[/lang]");
         ArrayList<String> backLore = new ArrayList<String>();
         backLore.add(" ");
         String menuMoveBack = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.back", player.getLocale());
@@ -938,7 +938,7 @@ public class GUI {
 
         // Create Inventory
 
-        Inventory GUIPresetPoses = Bukkit.createInventory(null, 27, "Rüstungsständer Posen");
+        Inventory GUIPresetPoses = Bukkit.createInventory(null, 27, "[lang]advancedarmorstand.gui.predefined_poses[/lang]");
 
 
         // Create ItemStacks
@@ -1240,7 +1240,7 @@ public class GUI {
         ItemStack helpItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta helpItemItemMeta = helpItem.getItemMeta();
         helpItemItemMeta.setCustomModelData(111);
-        helpItemItemMeta.setDisplayName("§7§lHilfe§8?");
+        helpItemItemMeta.setDisplayName("[lang]advancedarmorstand.gui.help[/lang]");
         ArrayList<String> helpItemLore = new ArrayList<String>();
         helpItemLore.add("  ");
         String menuPresetStringHelp = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.help", player.getLocale());
@@ -1254,7 +1254,7 @@ public class GUI {
         ItemStack backItem = new ItemStack(Material.PRISMARINE_SHARD, 1);
         ItemMeta backItemItemMeta = backItem.getItemMeta();
         backItemItemMeta.setCustomModelData(54);
-        backItemItemMeta.setDisplayName("§7§lZurück");
+        backItemItemMeta.setDisplayName("[lang]advancedarmorstand.gui.back[/lang]");
         ArrayList<String> backItemLore = new ArrayList<String>();
         backItemLore.add("  ");
         String menuPresetStringBack = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.back", player.getLocale());

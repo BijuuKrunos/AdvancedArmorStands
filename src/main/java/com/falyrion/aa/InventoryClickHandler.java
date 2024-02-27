@@ -30,7 +30,7 @@ public class InventoryClickHandler implements Listener {
                     // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     // Handle Click Events for Main Menu
 
-                    if (inventoryTitle.equalsIgnoreCase("Rüstungsständer")) {
+                    if (inventoryTitle.equalsIgnoreCase("[lang]advancedarmorstands.gui.armor_stand[/lang]")) {
 
                         clickEvent.setCancelled(true);
                         Player player = (Player) clickEvent.getWhoClicked();

@@ -3,7 +3,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.falyrion.aa</groupId>
    <artifactId>AdvancedArmorStands</artifactId>
-   <version>1.19.1.0</version>
+   <version>1.19.1.2</version>
 
    <properties>
       <java.version>17</java.version>
