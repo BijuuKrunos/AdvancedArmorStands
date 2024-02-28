@@ -973,7 +973,7 @@ public class GUI {
 
         ItemStack walkingPose1 = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta walkingPose1ItemMeta = walkingPose1.getItemMeta();
-        walkingPose1ItemMeta.setDisplayName("§7§lLaufend 1");
+        walkingPose1ItemMeta.setDisplayName("[lang]advancedarmorstand.gui.ongiong[/lang] 1");
         ArrayList<String> walkingPose1Lore = new ArrayList<String>();
         walkingPose1Lore.add("  ");
         String menuPresetString03 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_03", player.getLocale());
@@ -987,7 +987,7 @@ public class GUI {
 
         ItemStack walkingPose2 = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta walkingPose2ItemMeta = walkingPose2.getItemMeta();
-        walkingPose2ItemMeta.setDisplayName("§7§lLaufend 2");
+        walkingPose2ItemMeta.setDisplayName("[lang]advancedarmorstand.gui.ongiong[/lang] 2");
         ArrayList<String> walkingPose2Lore = new ArrayList<String>();
         walkingPose2Lore.add("  ");
         String menuPresetString04 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_04", player.getLocale());
@@ -1001,7 +1001,7 @@ public class GUI {
 
         ItemStack sittingPose = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta sittingPoseItemMeta = sittingPose.getItemMeta();
-        sittingPoseItemMeta.setDisplayName("§7§lSitzend");
+        sittingPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.sitting[/lang]");
         ArrayList<String> sittingPoseLore = new ArrayList<String>();
         sittingPoseLore.add("  ");
         String menuPresetString05 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_05", player.getLocale());
@@ -1015,7 +1015,7 @@ public class GUI {
 
         ItemStack wavingPose = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta wavingPoseItemMeta = wavingPose.getItemMeta();
-        wavingPoseItemMeta.setDisplayName("§7§lWinkend");
+        wavingPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.waving[/lang]");
         ArrayList<String> wavingPoseMeta = new ArrayList<String>();
         wavingPoseMeta.add("  ");
         String menuPresetString06 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_06", player.getLocale());
@@ -1029,7 +1029,7 @@ public class GUI {
 
         ItemStack greetingPose = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta greetingPoseItemMeta = greetingPose.getItemMeta();
-        greetingPoseItemMeta.setDisplayName("§7§lBegrüßend 1");
+        greetingPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.greeting[/lang] 1");
         ArrayList<String> greetingPoseLore = new ArrayList<String>();
         greetingPoseLore.add("  ");
         String menuPresetString07 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_07", player.getLocale());
@@ -1043,7 +1043,7 @@ public class GUI {
 
         ItemStack greetingPose2 = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta greetingPose2ItemMeta = greetingPose2.getItemMeta();
-        greetingPose2ItemMeta.setDisplayName("§7§lBegrüßend 2");
+        greetingPose2ItemMeta.setDisplayName("[lang]advancedarmorstand.gui.greeting[/lang] 2");
         ArrayList<String> greetingPose2Lore = new ArrayList<String>();
         greetingPose2Lore.add("  ");
         String menuPresetString08 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_08", player.getLocale());
@@ -1057,7 +1057,7 @@ public class GUI {
 
         ItemStack greetingPose3 = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta greetingPose3ItemMeta = greetingPose3.getItemMeta();
-        greetingPose3ItemMeta.setDisplayName("§7§lBegrüßend 3");
+        greetingPose3ItemMeta.setDisplayName("[lang]advancedarmorstand.gui.greeting[/lang] 3");
         ArrayList<String> greetingPose3Lore = new ArrayList<String>();
         greetingPose3Lore.add("  ");
         String menuPresetString09 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_09", player.getLocale());
@@ -1071,7 +1071,7 @@ public class GUI {
 
         ItemStack cheeringPose = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta cheeringPoseItemMeta = cheeringPose.getItemMeta();
-        cheeringPoseItemMeta.setDisplayName("§7§lJubel 1");
+        cheeringPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.cheers[/lang] 1");
         ArrayList<String> cheeringPoseLore = new ArrayList<String>();
         cheeringPoseLore.add("  ");
         String menuPresetString10 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_10", player.getLocale());
@@ -1085,7 +1085,7 @@ public class GUI {
 
         ItemStack cheeringPose2 = new ItemStack(Material.ARMOR_STAND, 1);
         ItemMeta cheeringPose2ItemMeta = cheeringPose2.getItemMeta();
-        cheeringPose2ItemMeta.setDisplayName("§7§lJubel 2");
+        cheeringPose2ItemMeta.setDisplayName("[lang]advancedarmorstand.gui.cheers[/lang] 2");
         ArrayList<String> cheeringPose2Lore = new ArrayList<String>();
         cheeringPose2Lore.add("  ");
         String menuPresetString11 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_11", player.getLocale());
@@ -1099,7 +1099,7 @@ public class GUI {
 
         ItemStack builderPose = new ItemStack(Material.CLAY, 1);
         ItemMeta builderPoseItemMeta = builderPose.getItemMeta();
-        builderPoseItemMeta.setDisplayName("§7§lErbauer");
+        builderPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.builder[/lang]");
         ArrayList<String> builderPoseLore = new ArrayList<String>();
         builderPoseLore.add("  ");
         String menuPresetString12 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_12", player.getLocale());
@@ -1113,7 +1113,7 @@ public class GUI {
 
         ItemStack swordFighterPose = new ItemStack(Material.IRON_SWORD, 1);
         ItemMeta swordFighterPoseItemMeta = swordFighterPose.getItemMeta();
-        swordFighterPoseItemMeta.setDisplayName("§7§lSchwertkämpfer");
+        swordFighterPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.swordsman[/lang]");
         ArrayList<String> swordFighterPoseLore = new ArrayList<String>();
         swordFighterPoseLore.add("  ");
         String menuPresetString13 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_13", player.getLocale());
@@ -1127,7 +1127,7 @@ public class GUI {
 
         ItemStack fencingPose = new ItemStack(Material.IRON_SWORD, 1);
         ItemMeta fencingPoseItemMeta = fencingPose.getItemMeta();
-        fencingPoseItemMeta.setDisplayName("§7§lFechter");
+        fencingPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.fencer[/lang]");
         ArrayList<String> fencingPoseLore = new ArrayList<String>();
         fencingPoseLore.add("  ");
         String menuPresetString14 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_14", player.getLocale());
@@ -1141,7 +1141,7 @@ public class GUI {
 
         ItemStack archerPose = new ItemStack(Material.BOW, 1);
         ItemMeta archerPoseItemMeta = archerPose.getItemMeta();
-        archerPoseItemMeta.setDisplayName("§7§lBogenschütze");
+        archerPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.archer[/lang]");
         ArrayList<String> archerPoseLore = new ArrayList<String>();
         archerPoseLore.add("  ");
         String menuPresetString15 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_15", player.getLocale());
@@ -1155,7 +1155,7 @@ public class GUI {
 
         ItemStack presentingPose = new ItemStack(Material.GOLDEN_SWORD, 1);
         ItemMeta presentingPoseItemMeta = presentingPose.getItemMeta();
-        presentingPoseItemMeta.setDisplayName("§7§lGegenstand Präsentieren");
+        presentingPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.present_object[/lang]");
         ArrayList<String> presentingPoseLore = new ArrayList<String>();
         presentingPoseLore.add("  ");
         String menuPresetString16 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_16", player.getLocale());
@@ -1169,7 +1169,7 @@ public class GUI {
 
         ItemStack holdingItemPose = new ItemStack(Material.GOLDEN_SWORD, 1);
         ItemMeta holdingItemPoseItemMeta = holdingItemPose.getItemMeta();
-        holdingItemPoseItemMeta.setDisplayName("§7§lGegenstand über dem Kopf halten");
+        holdingItemPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.hold_object[/lang]");
         ArrayList<String> holdingItemPoseLore = new ArrayList<String>();
         holdingItemPoseLore.add("  ");
         String menuPresetString21 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_21", player.getLocale());
@@ -1183,7 +1183,7 @@ public class GUI {
 
         ItemStack pointUpPose = new ItemStack(Material.GOLDEN_SWORD, 1);
         ItemMeta pointUpPoseItemMeta = pointUpPose.getItemMeta();
-        pointUpPoseItemMeta.setDisplayName("§7§lDirekt nach oben zeigen");
+        pointUpPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.point_upwards[/lang]");
         ArrayList<String> pointUpPoseLore = new ArrayList<String>();
         pointUpPoseLore.add("  ");
         String menuPresetString17 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_17", player.getLocale());
@@ -1211,7 +1211,7 @@ public class GUI {
 
         ItemStack dancingPose = new ItemStack(Material.FEATHER, 1);
         ItemMeta dancingPoseItemMeta = dancingPose.getItemMeta();
-        dancingPoseItemMeta.setDisplayName("§7§lTanzend 1");
+        dancingPoseItemMeta.setDisplayName("[lang]advancedarmorstand.gui.dancing[/lang] 1");
         ArrayList<String> dancingPoseLore = new ArrayList<String>();
         dancingPoseLore.add("  ");
         String menuPresetString19 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_19", player.getLocale());
@@ -1225,7 +1225,7 @@ public class GUI {
 
         ItemStack dancingPose2 = new ItemStack(Material.FEATHER, 1);
         ItemMeta dancingPose2ItemMeta = dancingPose2.getItemMeta();
-        dancingPose2ItemMeta.setDisplayName("§7§lTanzend 2");
+        dancingPose2ItemMeta.setDisplayName("[lang]advancedarmorstand.gui.dancing[/lang] 2");
         ArrayList<String> dancingPose2Lore = new ArrayList<String>();
         dancingPose2Lore.add("  ");
         String menuPresetString20 = ChatColor.GRAY + AdvancedArmorStandsMain.getInstance().getMessageString("menu.preset.pose_20", player.getLocale());

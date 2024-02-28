@@ -54,7 +54,7 @@ public class InventoryClickHandler implements Listener {
                     // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     // Handle Click Events for Basic Settings Menu
 
-                    else if (inventoryTitle.equalsIgnoreCase("RS Grundeinstellungen")) {
+                    else if (inventoryTitle.equalsIgnoreCase("[lang]advancedarmorstand.gui.basic_settings[/lang]")) {
 
                         clickEvent.setCancelled(true);
                         Player player = (Player) clickEvent.getWhoClicked();
@@ -78,7 +78,7 @@ public class InventoryClickHandler implements Listener {
                     // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     // Handle Click Events for Body Parts Settings Menu
 
-                    else if (inventoryTitle.equalsIgnoreCase("RS Körpereinstellungen")) {
+                    else if (inventoryTitle.equalsIgnoreCase("[lang]advancedarmorstand.gui.body_settings[/lang]")) {
 
                         clickEvent.setCancelled(true);
                         Player player = (Player) clickEvent.getWhoClicked();
@@ -102,7 +102,7 @@ public class InventoryClickHandler implements Listener {
                     // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     // Handle Click Events for Movement and Rotation Menus
 
-                    else if (inventoryTitle.equalsIgnoreCase("Rüstungsständer bewegen§8: §a0§8.§a1")) {
+                    else if (inventoryTitle.equalsIgnoreCase("[lang]advancedarmorstand.gui.move_armor_stand[/lang] §a0§8.§a1")) {
 
                         clickEvent.setCancelled(true);
                         Player player = (Player) clickEvent.getWhoClicked();
@@ -123,7 +123,7 @@ public class InventoryClickHandler implements Listener {
                         }
                     }
 
-                    else if (inventoryTitle.equalsIgnoreCase("Rüstungsständer bewegen§8: §a0§8.§a5")) {
+                    else if (inventoryTitle.equalsIgnoreCase("[lang]advancedarmorstand.gui.move_armor_stand[/lang] §a0§8.§a5")) {
 
                         clickEvent.setCancelled(true);
                         Player player = (Player) clickEvent.getWhoClicked();
@@ -144,7 +144,7 @@ public class InventoryClickHandler implements Listener {
                         }
                     }
 
-                    else if (inventoryTitle.equalsIgnoreCase("Rüstungsständer bewegen§8: §a1")) {
+                    else if (inventoryTitle.equalsIgnoreCase("[lang]advancedarmorstand.gui.move_armor_stand[/lang] §a1")) {
 
                         clickEvent.setCancelled(true);
                         Player player = (Player) clickEvent.getWhoClicked();
@@ -168,7 +168,7 @@ public class InventoryClickHandler implements Listener {
                     // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     // Handle Click Events for Preset Pose Menu
 
-                    else if (inventoryTitle.equalsIgnoreCase("Rüstungsständer Posen")) {
+                    else if (inventoryTitle.equalsIgnoreCase("[lang]advancedarmorstand.gui.predefined_poses[/lang]")) {
 
                         clickEvent.setCancelled(true);
                         Player player = (Player) clickEvent.getWhoClicked();
@@ -206,37 +206,37 @@ public class InventoryClickHandler implements Listener {
     private void handleEventMainMenu(String itemName, Player player) {
 
         switch(itemName) {
-            case "§7§lGrundeinstellungen":
+            case "[lang]advancedarmorstand.gui.basic_settings[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 2);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
                 break;
 
-            case "§7§lKörpereinstellungen":
+            case "[lang]advancedarmorstand.gui.body_settings[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 3);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
                 break;
 
-            case "§7§lBewegung und Drehung":
+            case "[lang]advancedarmorstand.gui.movement_and_rotation[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 5);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
                 break;
 
-            case "§7§lVordefinierte Posen":
+            case "[lang]advancedarmorstand.gui.predefined_poses[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 7);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
                 break;
 
-            case "§7§lKöpfe":
+            case "[lang]advancedarmorstand.gui.heads[/lang]":
 
             case "§7§lHelp and Info":
                 AdvancedArmorStandsMain.getInstance().playSoundBass(player);
                 break;
 
-            case "§7§lSchließen":
+            case "[lang]advancedarmorstand.gui.close[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
                 break;
@@ -253,7 +253,7 @@ public class InventoryClickHandler implements Listener {
     private void handleEventBasicMenu(String itemName, Player player) {
 
         switch(itemName) {
-            case "§7§lArme":
+            case "[lang]advancedarmorstand.gui.arms[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -273,7 +273,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lSteinplatte unsichtbar":
+            case "[lang]advancedarmorstand.gui.stone_slab[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -293,7 +293,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lSteinplatte sichtbar":
+            case "[lang]advancedarmorstand.gui.stone_slab_off[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -313,7 +313,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lSchwerkraft aus":
+            case "[lang]advancedarmorstand.gui.gravity.off[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -334,7 +334,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lSchwerkraft an":
+            case "[lang]advancedarmorstand.gui.gravity.on[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -354,7 +354,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lUnsichtbar":
+            case "[lang]advancedarmorstand.gui.invisible[/lang]":
                 if (player.hasPermission("aa.visible")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -374,7 +374,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lSichtbar":
+            case "[lang]advancedarmorstand.gui.visible[/lang]":
                 if (player.hasPermission("aa.visible")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -394,7 +394,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lKlein":
+            case "[lang]advancedarmorstand.gui.small[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -414,7 +414,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lNormale Größe":
+            case "[lang]advancedarmorstand.gui.normal_size[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -434,7 +434,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lNamen ausblenden":
+            case "[lang]advancedarmorstand.gui.hide_names[/lang]":
                 if (player.hasPermission("aa.names")) {
                     for (Entity entity : player.getNearbyEntities(0.5, 0.5, 0.5)){
                         if (entity instanceof ArmorStand armorStand) {
@@ -454,14 +454,9 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lNamenshilfe":
+            case "[lang]advancedarmorstand.gui.name_help[/lang]":
                 if (player.hasPermission("aa.names")) {
-                    player.sendMessage("§8===[ §9RS §8| §9Namenshilfe §8]===");
-                    player.sendMessage("§7Benutze §8/§6aa name §8<§6Text§8> §7um deinen Rüstungsständer einen individuellen Namen zu geben§8! §7Der Befehl wirkt auf jeden Rüstungsständer in §a1 Block §7Radius§8.");
-                    player.sendMessage("§7Schreibe einen §a& §7Farb§8- §7oder Textcode vor dem Namen um diesen zu beinflussen§8.");
-                    player.sendMessage("  ");
-                    player.sendMessage("§7Beispiel§8: '/§6aa name &3Ich &6&lbin &fToll§8' §7wird zu §8'§3Ich §6§lbin §fToll§8' ");
-                    player.sendMessage("§8===========================");
+                    player.sendMessage("[lang]advancedarmorstand.help.with.names[/lang]");
 
                     player.closeInventory();
                     AdvancedArmorStandsMain.getInstance().playSoundClick(player);
@@ -470,7 +465,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lLeuchtend an":
+            case "[lang]advancedarmorstand.gui.light_on[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -490,7 +485,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lLeuchtend aus":
+            case "[lang]advancedarmorstand.gui.light_off[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(1, 1, 1)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -510,7 +505,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lUnzerstörbar":
+            case "[lang]advancedarmorstand.gui.indestructible[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(2, 2, 2)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -533,13 +528,13 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lIndividueller Name":
+            case "[lang]advancedarmorstand.gui.individual_name[/lang]":
 
-            case "§7§lHilfe?":
+            case "[lang]advancedarmorstand.gui.help[/lang]":
                 AdvancedArmorStandsMain.getInstance().playSoundBass(player);
                 break;
 
-            case "§7§lZurück":
+            case "[lang]advancedarmorstand.gui.back[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 1);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
@@ -557,23 +552,23 @@ public class InventoryClickHandler implements Listener {
     private void handleEventBodyPartMenu(String itemName, Player player) {
 
         switch (itemName) {
-            case "§7§lKopf Position":
+            case "[lang]advancedarmorstand.gui.head_position[/lang]":
 
-            case "§7§lKörper Position":
+            case "[lang]advancedarmorstand.gui.body_position[/lang]":
 
-            case "§7§lRechte Arm Position":
+            case "[lang]advancedarmorstand.gui.right_arm_position[/lang]":
 
-            case "§7§lLinke Arm Position":
+            case "[lang]advancedarmorstand.gui.left_arm_position[/lang]":
 
-            case "§7§lRechte Bein Position":
+            case "[lang]advancedarmorstand.gui.right_leg_position[/lang]":
 
-            case "§7§lLinke Bein Position":
+            case "[lang]advancedarmorstand.gui.left_leg_position[/lang]":
 
-            case "§7§lHilfe§8?":
+            case "[lang]advancedarmorstand.gui.help[/lang]":
                 AdvancedArmorStandsMain.getInstance().playSoundBass(player);
                 break;
 
-            case "§7§lZurück":
+            case "[lang]advancedarmorstand.gui.back[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 1);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
@@ -596,32 +591,32 @@ public class InventoryClickHandler implements Listener {
 
         switch (itemName) {
 
-            case "§7§lZurück":
+            case "[lang]advancedarmorstand.gui.back[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 1);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
                 break;
 
-            case "§7§lHilfe§8?":
-            case "§7§lDistanz§8: §a0§8.§a1 Blöcke §8(§7Activ§8)":
-            case "§7§lDistanz§8: §a0§8.§a5 Blöcke §8(§7Activ§8)":
-            case "§7§lDistanz§8: §a1 Block §8(§7Activ§8)":
+            case "[lang]advancedarmorstand.gui.help[/lang]":
+            case "[lang]advancedarmorstand.gui.blockSmallName[/lang] §8(§7Activ§8)":
+            case "[lang]advancedarmorstand.gui.blockMediumName[/lang] §8(§7Activ§8)":
+            case "[lang]advancedarmorstand.gui.blockLargeName[/lang] §8(§7Activ§8)":
                 AdvancedArmorStandsMain.getInstance().playSoundBass(player);
                 break;
 
-            case "§7§lDistanz§8: §a1 Block":
+            case "[lang]advancedarmorstand.gui.blockLargeName[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 6);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
                 break;
 
-            case "§7§lDistanz§8: §a0§8.§a5 Blöcke":
+            case "[lang]advancedarmorstand.gui.blockMediumName[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 5);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
                 break;
 
-            case "§7§lDistanz§8: §a0§8.§a1 Blöcke":
+            case "[lang]advancedarmorstand.gui.blockSmallName[/lang]":
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 4);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
@@ -630,7 +625,7 @@ public class InventoryClickHandler implements Listener {
 
             // Nav Cross
 
-            case "§7§lVorwärts":
+            case "[lang]advancedarmorstand.gui.forward[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(distance, distance, distance)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -656,7 +651,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lRückwärts":
+            case "[lang]advancedarmorstand.gui.backward[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(distance, distance, distance)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -682,7 +677,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lRechts":
+            case "[lang]advancedarmorstand.gui.right[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(distance, distance, distance)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -708,7 +703,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lLinks":
+            case "[lang]advancedarmorstand.gui.left[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(distance, distance, distance)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -737,7 +732,7 @@ public class InventoryClickHandler implements Listener {
 
             // Move up and down
 
-            case "§7§lHoch":
+            case "[lang]advancedarmorstand.gui.up[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(distance, distance, distance)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -763,7 +758,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lRunter":
+            case "[lang]advancedarmorstand.gui.down[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(distance, distance, distance)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -792,7 +787,7 @@ public class InventoryClickHandler implements Listener {
 
             // Rotate
 
-            case "§7§lNach links drehen":
+            case "[lang]advancedarmorstand.gui.turn_left[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(distance, distance, distance)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -818,7 +813,7 @@ public class InventoryClickHandler implements Listener {
                 }
                 break;
 
-            case "§7§lNach rechts drehen":
+            case "[lang]advancedarmorstand.gui.turn_right[/lang]":
                 if (player.hasPermission("aa.edit")) {
                     for (Entity entity : player.getNearbyEntities(distance, distance, distance)) {
                         if (entity instanceof ArmorStand armorStand) {
@@ -914,7 +909,7 @@ public class InventoryClickHandler implements Listener {
                 armorStand.setHeadPose(headEulerAngle);
 
                 // Send success message to player
-                player.sendMessage("§8[§bAA§8] §7Ein naher Rüstungsständer wurde editiert§8!");
+                player.sendMessage("[lang]advancedarmorstand.nearby_armor_stand.edited[/lang]");
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
         }
@@ -939,67 +934,67 @@ public class InventoryClickHandler implements Listener {
                 setArmorStandPose(player, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lLaufend 1" -> {
+            case "[lang]advancedarmorstand.gui.ongiong[/lang] 1" -> {
                 setArmorStandPose(player, 345, 0, 10, 350, 0, 350, 340, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lLaufend 2" -> {
+            case "[lang]advancedarmorstand.gui.ongiong[/lang] 2" -> {
                 setArmorStandPose(player, 300, 40, 350, 20, 0, 350, 10, 0, 0, 350, 0, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lSitzend" -> {
+            case "[lang]advancedarmorstand.gui.sitting[/lang]" -> {
                 setArmorStandPose(player, 345, 0, 10, 350, 0, 350, 280, 20, 0, 280, 340, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lWinkend" -> {
+            case "[lang]advancedarmorstand.gui.waving[/lang]" -> {
                 setArmorStandPose(player, 220, 20, 0, 350, 0, 350, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lBegrüßend 1" -> {
+            case "[lang]advancedarmorstand.gui.greeting[/lang] 1" -> {
                 setArmorStandPose(player, 260, 20, 0, 260, 340, 0, 340, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lBegrüßend 2" -> {
+            case "[lang]advancedarmorstand.gui.greeting[/lang] 2" -> {
                 setArmorStandPose(player, 240, 50, 0, 240, 320, 0, 10, 0, 0, 350, 0, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lBegrüßend 3" -> {
+            case "[lang]advancedarmorstand.gui.greeting[/lang] 3" -> {
                 setArmorStandPose(player, 260, 10, 0, 260, 350, 0, 320, 0, 0, 10, 0, 0, 340, 0, 350, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lJubel 1" -> {
+            case "[lang]advancedarmorstand.gui.cheers[/lang] 1" -> {
                 setArmorStandPose(player, 220, 20, 0, 220, 340, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lJubel 2" -> {
+            case "[lang]advancedarmorstand.gui.cheers[/lang] 2" -> {
                 setArmorStandPose(player, 250, 60, 0, 20, 10, 0, 10, 0, 0, 350, 0, 0, 340, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lErbauer" -> {
+            case "[lang]advancedarmorstand.gui.builder[/lang]" -> {
                 setArmorStandPose(player, 340, 320, 0, 320, 40, 0, 340, 0, 0, 20, 0, 0, 20, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lSchwertkämpfer" -> {
+            case "[lang]advancedarmorstand.gui.swordsman[/lang]" -> {
                 setArmorStandPose(player, 300, 320, 0, 300, 40, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lFechter" -> {
+            case "[lang]advancedarmorstand.gui.fencer[/lang]" -> {
                 setArmorStandPose(player, 290, 0, 270, 20, 0, 230, 0, 30, 0, 340, 0, 340, 20, 30, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lBogenschütze" -> {
+            case "[lang]advancedarmorstand.gui.archer[/lang]" -> {
                 setArmorStandPose(player, 270, 350, 0, 280, 50, 0, 340, 0, 10, 20, 0, 350, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lGegenstand Präsentieren" -> {
+            case "[lang]advancedarmorstand.gui.present_object[/lang]" -> {
                 setArmorStandPose(player, 280, 330, 0, 10, 0, 350, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lGegenstand über dem Kopf halten" -> {
+            case "[lang]advancedarmorstand.gui.hold_object[/lang]" -> {
                 setArmorStandPose(player, 250, 320, 0, 250, 35, 0, 10, 0, 0, 350, 0, 0, 340, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lDirekt nach oben zeigen" -> {
+            case "[lang]advancedarmorstand.gui.point_upwards[/lang]" -> {
                 setArmorStandPose(player, 260, 60, 0, 20, 20, 0, 10, 340, 0, 10, 30, 0, 0, 70, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
@@ -1007,16 +1002,16 @@ public class InventoryClickHandler implements Listener {
                 setArmorStandPose(player, 300, 320, 0, 300, 40, 0, 280, 20, 0, 280, 340, 0, 0, 0, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lTanzend 1" -> {
+            case "[lang]advancedarmorstand.gui.dancing[/lang] 1" -> {
                 setArmorStandPose(player, 14, 0, 110, 20, 0, 250, 15, 30, 0, 330, 0, 110, 350, 20, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lTanzend 2" -> {
+            case "[lang]advancedarmorstand.gui.dancing[/lang] 2" -> {
                 setArmorStandPose(player, 14, 0, 110, 20, 0, 250, 250, 330, 0, 15, 330, 0, 350, 350, 0, 0, 0, 0);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
             }
-            case "§7§lHilfe§8?" -> AdvancedArmorStandsMain.getInstance().playSoundBass(player);
-            case "§7§lZurück" -> {
+            case "[lang]advancedarmorstand.gui.help[/lang]" -> AdvancedArmorStandsMain.getInstance().playSoundBass(player);
+            case "[lang]advancedarmorstand.gui.back[/lang]" -> {
                 player.closeInventory();
                 AdvancedArmorStandsMain.getInstance().showMenu(player, 1);
                 AdvancedArmorStandsMain.getInstance().playSoundClick(player);
